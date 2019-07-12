@@ -28,6 +28,14 @@ public class Player : MonoBehaviour {
         ProcessRotation( );
         
     }
+
+    void OnCollisionEnter( Collision collision ) {
+        print( "Bang!" );
+    }
+
+    void OnTriggerEnter( Collider other ) {
+        print( "oof!" );
+    }
     
     private void ProccessTranlation( ) {
         this.horizontalThrow = CrossPlatformInputManager.GetAxis( "Horizontal" );
