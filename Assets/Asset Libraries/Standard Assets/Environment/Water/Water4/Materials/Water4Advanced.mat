@@ -106,8 +106,8 @@ Material:
     - _FadeExp: 0.91503274
     - _FoamWaveDependency: 0.10205479
     - _FresnelPower: 1.7931035
-    - _FresnelScale: 1.53
-    - _GerstnerIntensity: 0.35
+    - _FresnelScale: 2.45
+    - _GerstnerIntensity: 0.74
     - _HeightDisplacement: 3.2722514
     - _InvFade: 0.628783
     - _InvFadeDepthFade: 0.07197756
@@ -135,9 +135,9 @@ Material:
     - _DepthColorFade: {r: 0.8880597, g: 0.27834705, b: 0.44463244, a: 0.22352941}
     - _Displacement: {r: 6.6371665, g: 20.353983, b: -1, a: -0.681416}
     - _DisplacementXz: {r: 0.6499999, g: -2.9203715, b: 1.6599998, a: -3.9363046}
-    - _DistortParams: {r: 1.86, g: 0.089, b: 2.01, a: -0.38}
+    - _DistortParams: {r: 0.93, g: -0.046, b: 4.55, a: -0.38}
     - _Extinction: {r: 4.5, g: 75, b: 300, a: 1}
-    - _Foam: {r: 0.427, g: 0.35, b: 0, a: 0}
+    - _Foam: {r: 0.185, g: 0.413, b: 0, a: 0}
     - _FoamWaveParams: {r: 0, g: 0.24918434, b: 3.3395782, a: 1}
     - _Fresnel_ST: {r: 1, g: 1, b: 0, a: 0}
     - _GAmplitude: {r: 0.14, g: 0.76, b: 0.175, a: 0.225}
@@ -147,7 +147,7 @@ Material:
     - _GSpeed: {r: -0.2, g: 0.62, b: -0.13, a: 0.51}
     - _GSteepness: {r: 7, g: 2, b: 6, a: 2}
     - _HorizonColor: {r: 0.052907113, g: 0.24486735, b: 0.2835821, a: 1}
-    - _InvFadeParemeter: {r: 0.16, g: 0.11, b: 0.04310345, a: 0.738}
+    - _InvFadeParemeter: {r: 0.16, g: 0.11, b: 0.04310345, a: 0.85}
     - _MainTex_ST: {r: 1, g: 1, b: 0, a: 0}
     - _ReflectionColor: {r: 0.5794164, g: 0.6849238, b: 0.76119405, a: 0.43137255}
     - _ReflectionTex_ST: {r: 1, g: 1, b: 0, a: 0}

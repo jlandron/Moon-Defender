@@ -1,10 +1,14 @@
-﻿using UnityEngine;
-
-
+﻿using System.Collections;
+using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
     void Awake( ) {
-        DontDestroyOnLoad( this.gameObject );
+        if( FindObjectsOfType<MusicPlayer>( ).Length > 1 ) {
+            Destroy( this.gameObject );
+        }
+        else {
+            DontDestroyOnLoad( this.gameObject );
+        }
     }
 }

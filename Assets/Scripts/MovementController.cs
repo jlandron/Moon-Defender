@@ -1,40 +1,37 @@
 ﻿using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour {
+public class MovementController : MonoBehaviour {
+    [Header("General")]
     [Tooltip("In m*s^-1")][SerializeField] float xSpeed = 20;
     [Tooltip( "In m*s^-1" )] [SerializeField] float ySpeed = 20;
+
+    [Header( "Screen Posistion parameters" )]
     [SerializeField] float xRange = 6f;
     [SerializeField] float yRange = 4f;
-    
 
+    [Header( "Control throw parameters" )]
     [SerializeField] float pitchFactor = -5;
     [SerializeField] float controlPitchFactor = -10;
     [SerializeField] float yawFactor = 5;
     [SerializeField] float rollFactor = -15;
 
-    float horizontalThrow;
-    float verticalThrow;
+    private float horizontalThrow;
+    private float verticalThrow;
+    private bool isAlive;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        isAlive = true;
     }
 
     // Update is called once per frame
     void Update() {
-        ProccessTranlation( );
-        ProcessRotation( );
-        
-    }
-
-    void OnCollisionEnter( Collision collision ) {
-        print( "Bang!" );
-    }
-
-    void OnTriggerEnter( Collider other ) {
-        print( "oof!" );
+        if( isAlive ) {
+            ProccessTranlation( );
+            ProcessRotation( );
+        }        
     }
     
     private void ProccessTranlation( ) {
@@ -53,5 +50,9 @@ public class Player : MonoBehaviour {
         float yaw = (transform.localPosition.x * yawFactor) + (yawFactor * horizontalThrow);
         float roll = (rollFactor * horizontalThrow);
         transform.localRotation = Quaternion.Euler( pitch, yaw, roll );
+    }
+    public void KillPlayer( ) {
+        isAlive = false;
+
     }
 }

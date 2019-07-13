@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7888211427980590382}
   - component: {fileID: 7863101519584513244}
   - component: {fileID: 7871025795371846948}
+  - component: {fileID: 8209943672327533578}
   m_Layer: 0
   m_Name: AlienFighterWhite
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7884434862133326248}
-  m_LocalRotation: {x: 0.008194554, y: 0.7447456, z: 0.010487621, w: 0.66721576}
+  m_LocalRotation: {x: 0.008194895, y: 0.7447438, z: 0.01048222, w: 0.6672179}
   m_LocalPosition: {x: -153.49, y: -84.11, z: -100.65}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
@@ -79,3 +80,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8209943672327533578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7884434862133326248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cafa42c60b7e03541ac727b7828195f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathFX: {fileID: 7996485060284494781, guid: 57c9528bbb0057b4d9fa7b01a5721fe8, type: 3}
+  hitPoints: 1
+  parent: {fileID: 0}
