@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class MovementController : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
     [Header("General")]
     [Tooltip("In m*s^-1")][SerializeField] float xSpeed = 20;
     [Tooltip( "In m*s^-1" )] [SerializeField] float ySpeed = 20;
+    [SerializeField] GameObject[] guns;
 
     [Header( "Screen Posistion parameters" )]
     [SerializeField] float xRange = 6f;
@@ -15,6 +16,8 @@ public class MovementController : MonoBehaviour {
     [SerializeField] float controlPitchFactor = -10;
     [SerializeField] float yawFactor = 5;
     [SerializeField] float rollFactor = -15;
+
+    
 
     private float horizontalThrow;
     private float verticalThrow;
@@ -31,6 +34,7 @@ public class MovementController : MonoBehaviour {
         if( isAlive ) {
             ProccessTranlation( );
             ProcessRotation( );
+            ProcessFiring( );
         }        
     }
     
@@ -54,5 +58,22 @@ public class MovementController : MonoBehaviour {
     public void KillPlayer( ) {
         isAlive = false;
 
+    }
+
+    private void ProcessFiring( ) {
+        if( CrossPlatformInputManager.GetButton( "Fire1" ) ) {
+            foreach( GameObject gun in guns ) {
+                gun.SetActive( true );
+            }
+        }
+        else {
+            foreach( GameObject gun in guns ) {
+                gun.SetActive( false );
+            }
+        }
+        //make hard hitting secondary guns
+        //if( CrossPlatformInputManager.GetButton( "Fire2" ) ) {
+             
+        //}
     }
 }

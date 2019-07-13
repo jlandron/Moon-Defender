@@ -2,7 +2,8 @@
 
 public class Enemy : MonoBehaviour {
     [Header("General")]
-    [Tooltip( "Particle and audio effects on player death" )] [SerializeField] GameObject deathFX;
+    [Tooltip( "Particle and audio effects on enemy death" )] [SerializeField] GameObject deathFX;
+    [Tooltip( "Particle and audio effects on enemy hit" )] [SerializeField] AudioClip hitFX;
     [Tooltip( "Number of hits this enemy can take" )] [SerializeField] int hitPoints = 1;
     [Tooltip( "integer that is added to the score per kill" )][SerializeField] int score = 1;
 
@@ -24,6 +25,7 @@ public class Enemy : MonoBehaviour {
     
     void OnParticleCollision( GameObject other ) {
         hitPoints--;
+        //todo consider adding hit effects
         if( hitPoints <= 0 ) {
             scoreBoard.ScoreHit( score );
             GameObject fx = Instantiate( deathFX, transform.position, Quaternion.identity );
