@@ -5732,6 +5732,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1939243661}
     m_Modifications:
+    - target: {fileID: 6397229054906997413, guid: e6985fb1029b18440a655592556af400,
+        type: 3}
+      propertyPath: m_Name
+      value: AlienDestroyer (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6398401659364366349, guid: e6985fb1029b18440a655592556af400,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5786,11 +5791,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 2.364
-      objectReference: {fileID: 0}
-    - target: {fileID: 6397229054906997413, guid: e6985fb1029b18440a655592556af400,
-        type: 3}
-      propertyPath: m_Name
-      value: AlienDestroyer (2)
       objectReference: {fileID: 0}
     - target: {fileID: 9058064289759404279, guid: e6985fb1029b18440a655592556af400,
         type: 3}
@@ -8125,6 +8125,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1939243661}
     m_Modifications:
+    - target: {fileID: 6397229054906997413, guid: e6985fb1029b18440a655592556af400,
+        type: 3}
+      propertyPath: m_Name
+      value: AlienDestroyer (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6398401659364366349, guid: e6985fb1029b18440a655592556af400,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8179,11 +8184,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 2.4220002
-      objectReference: {fileID: 0}
-    - target: {fileID: 6397229054906997413, guid: e6985fb1029b18440a655592556af400,
-        type: 3}
-      propertyPath: m_Name
-      value: AlienDestroyer (1)
       objectReference: {fileID: 0}
     - target: {fileID: 9058064289759404279, guid: e6985fb1029b18440a655592556af400,
         type: 3}
@@ -9948,6 +9948,7 @@ PlayableDirector:
     - 98f0feaa41701c7448d0df252cb2acda: {fileID: 922364564}
     - 38bfff7727f8de5479f8158f6cb39310: {fileID: 1939243660}
     - 44b0697bbdf973f4dafbb244ae3cae20: {fileID: 922364564}
+    - fd0cfb913ff35b9478969ed84f8032d0: {fileID: 1939243660}
     - 1ad099dca80163842898bf1d932e3722: {fileID: 372210765}
 --- !u!4 &1469211306
 Transform:
@@ -11244,8 +11245,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681592193}
-  m_LocalRotation: {x: -0.21153094, y: 0.15438999, z: 0.03387204, w: 0.9645056}
-  m_LocalPosition: {x: 866.52893, y: -51.355164, z: 515.48}
+  m_LocalRotation: {x: -0.07209168, y: 0.48804614, z: 0.04073373, w: 0.8688812}
+  m_LocalPosition: {x: 585.37354, y: 12.892685, z: 99.36539}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 893341703}
@@ -12938,7 +12939,7 @@ GameObject:
   - component: {fileID: 1939243661}
   - component: {fileID: 1939243662}
   m_Layer: 0
-  m_Name: Wave 3
+  m_Name: Wave 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15433,6 +15434,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1008440189}
     m_Modifications:
+    - target: {fileID: 6397229054906997413, guid: e6985fb1029b18440a655592556af400,
+        type: 3}
+      propertyPath: m_Name
+      value: AlienDestroyer
+      objectReference: {fileID: 0}
     - target: {fileID: 6398401659364366349, guid: e6985fb1029b18440a655592556af400,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15487,11 +15493,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.966
-      objectReference: {fileID: 0}
-    - target: {fileID: 6397229054906997413, guid: e6985fb1029b18440a655592556af400,
-        type: 3}
-      propertyPath: m_Name
-      value: AlienDestroyer
       objectReference: {fileID: 0}
     - target: {fileID: 9058064289759404279, guid: e6985fb1029b18440a655592556af400,
         type: 3}
