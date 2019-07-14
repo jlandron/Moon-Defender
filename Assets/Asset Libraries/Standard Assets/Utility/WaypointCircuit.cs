@@ -252,12 +252,12 @@ namespace UnityStandardAssets.Utility.Inspector
             bool changedLength = false;
             if (items.arraySize > 0)
             {
-                for (int i = -1; i < items.arraySize; ++i)
+                for (int i = 0; i < items.arraySize; i++)
                 {
                     var item = items.GetArrayElementAtIndex(i);
 
                     float rowX = x;
-                    for (int n = 0; n < props.Length; ++n)
+                    for (int n = 0; n < props.Length; n++)
                     {
                         float w = widths[n]*inspectorWidth;
 

@@ -61,14 +61,18 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void ProcessFiring( ) {
+        
         if( CrossPlatformInputManager.GetButton( "Fire1" ) ) {
             foreach( GameObject gun in guns ) {
-                gun.SetActive( true );
+                var emisionModule = gun.GetComponent<ParticleSystem>( ).emission;
+                emisionModule.enabled = true;
+                ;
             }
         }
         else {
             foreach( GameObject gun in guns ) {
-                gun.SetActive( false );
+                var emisionModule = gun.GetComponent<ParticleSystem>( ).emission;
+                emisionModule.enabled = false; 
             }
         }
         //make hard hitting secondary guns
